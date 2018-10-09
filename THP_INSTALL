@@ -217,28 +217,28 @@ Fuzzing Lists (SecLists)
 Password Lists
 ●	For the different password lists, see the section: Special Teams - Cracking, Exploits, and Tricks
 
-Net-Creds Network Parsing 
-●	Parse PCAP files for username/passwords
-●	git clone https://github.com/DanMcInerney/net-creds.git /opt/net-creds
+Echo Net-Creds Network Parsing 
+Echo Parse PCAP files for username/passwords
+git clone https://github.com/DanMcInerney/net-creds.git /opt/net-creds
 
-Installing Firefox Add-ons
-●	Web Developer Add-on: https://addons.mozilla.org/en-US/firefox/addon/web-developer/
-●	Tamper Data: https://addons.mozilla.org/en-US/firefox/addon/tamper-data/
-●	Foxy Proxy: https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
-●	User Agent Switcher: https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/
+#Installing Firefox Add-ons
+#Web Developer Add-on: https://addons.mozilla.org/en-US/firefox/addon/web-developer/
+#Tamper Data: https://addons.mozilla.org/en-US/firefox/addon/tamper-data/
+#Foxy Proxy: https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
+#User Agent Switcher: https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher/
 
-Wifite
-●	Attacks against WiFi networks
-●	git clone https://github.com/derv82/wifite /opt/wifite
+#Wifite
+#Attacks against WiFi networks
+#git clone https://github.com/derv82/wifite /opt/wifite
 
-WIFIPhisher
-●	Automated phishing attacks against WiFi networks
-●	git clone https://github.com/sophron/wifiphisher.git /opt/wifiphisher
+Echo WIFIPhisher
+Echo Automated phishing attacks against WiFi networks
+git clone https://github.com/sophron/wifiphisher.git /opt/wifiphisher
 
-Phishing (Optional):
-●	Phishing-Frenzy
-	○	git clone https://github.com/pentestgeek/phishing-frenzy.git /var/www/phishing-frenzy
-●	Custom List of Extras
-	○	git clone https://github.com/macubergeek/gitlist.git /opt/gitlist
+Echo Phishing (Optional):
+Echo Phishing-Frenzy
+git clone https://github.com/pentestgeek/phishing-frenzy.git /var/www/phishing-frenzy
+Echo Custom List of Extras
+git clone https://github.com/macubergeek/gitlist.git /opt/gitlist
 
-*Remember to check http://thehackerplaybook.com/updates/ for any updates.
+Echo *Remember to check http://thehackerplaybook.com/updates/ for any updates.
