@@ -1,47 +1,51 @@
-THIS IS A WORK IN PROGRESS FILE, I STILL HAVE TO CLEAN IT UP AND ADD SEVERAL FUNCTIONS 
-TO MAKE THE PALYBOOK EASIER TO START. 10/8/2018
+# THIS IS A WORK IN PROGRESS FILE, I STILL HAVE TO CLEAN IT UP AND ADD SEVERAL FUNCTIONS 
+# TO MAKE THE PALYBOOK EASIER TO START. 10/8/2018
+# Since this book is based off of the Kali Linux platform, you can download the Kali Linux distro from: http://www.kali.org/downloads/. I highly recommend you download the VMware image (https://www.offensive-security.com/kali-linux-vmware-arm-image-download/) and download Virtual Player/VirtualBox. Remember that it will be a gz-compressed and tar archived file, so make sure to extract them first and load the vmx file.
 
 
-The Hacker Playbook 2
-http://www.amazon.com/dp/1512214566/
+echo The Hacker Playbook 2
+echo http://www.amazon.com/dp/1512214566/
 
-Since this book is based off of the Kali Linux platform, you can download the Kali Linux distro from: http://www.kali.org/downloads/. I highly recommend you download the VMware image (https://www.offensive-security.com/kali-linux-vmware-arm-image-download/) and download Virtual Player/VirtualBox. Remember that it will be a gz-compressed and tar archived file, so make sure to extract them first and load the vmx file.
 
-Once Your Kali VM is Up and Running
-●	Log in with the username root and the default password toor
-●	Open a terminal
-●	Change the password
-	○	passwd
-●	Update the image
-	○	apt-get update
-	○	apt-get dist-upgrade
-●	Setup Metasploit database
-	○	service postgresql start
-●	Make postgresql database start on boot
-	○	update-rc.d postgresql enable
-●	Start and stop the Metasploit service (this will setup the database.yml file for you)
-	○	service metasploit start
-	○	service metasploit stop
-●	Install gedit
-	○	apt-get install gedit
-●	Change the hostname - Many network admins look for systems named Kali in logs like DHCP. It is best to follow the naming standard used by the company you are testing
-	○	gedit /etc/hostname
-		■	Change the hostname (replace kali) and save
-	○	gedit /etc/hosts
-		■	Change the hostname (replace kali) and save
-	○	reboot
-●	*Optional for Metasploit - Enable Logging
-	○	I list this as optional since logs get pretty big, but you have the ability to log every command and result from Metasploit’s Command Line Interface (CLI). This becomes very useful for bulk attack/queries or if your client requires these logs. *If this is a fresh image, type msfconsole first and exit before configuring logging to create the .msf4 folder.
-	○	From a command prompt, type:
-		■	echo “spool /root/msf_console.log” > /root/.msf4/msfconsole.rc
-	○	Logs will be stored at /root/msf_console.log
+# Once Your Kali VM is Up and Running
+# Log in with the username root and the default password toor
+# Open a terminal
+# Change the password
+# passwd
 
-Tool Installation
-The Backdoor Factory:
-●	Patch PE, ELF, Mach-O binaries with shellcode.
-●	git clone https://github.com/secretsquirrel/the-backdoor-factory /opt/the-backdoor-factory
-●	cd the-backdoor-factory
-●	./install.sh
+echo Update the image
+apt-get update
+apt-get dist-upgrade
+
+echo Setup Metasploit database
+service postgresql start
+Make postgresql database start on boot
+update-rc.d postgresql enable
+
+echo Start and stop the Metasploit service (this will setup the database.yml file for you)
+service metasploit start
+service metasploit stop
+Install gedit
+apt-get install gedit
+# Change the hostname - Many network admins look for systems named Kali in logs like DHCP. It is best to follow the naming standard used by the company you are testing
+gedit /etc/hostname
+echo Change the hostname (replace kali) and save
+gedit /etc/hosts
+echo Change the hostname (replace kali) and save
+
+#reboot
+#echo Optional for Metasploit - Enable Logging
+#echo I list this as optional since logs get pretty big, but you have the ability to log every command and result from Metasploit’s Command Line Interface (CLI). This becomes very useful for bulk attack/queries or if your client requires these logs. *If this is a fresh image, type msfconsole first and exit before configuring logging to create the .msf4 folder.
+#echo From a command prompt, type:
+#echo “spool /root/msf_console.log” > /root/.msf4/msfconsole.rc
+#echo Logs will be stored at /root/msf_console.log
+
+echo Tool Installation
+echo The Backdoor Factory:
+# Patch PE, ELF, Mach-O binaries with shellcode.
+git clone https://github.com/secretsquirrel/the-backdoor-factory /opt/the-backdoor-factory
+cd the-backdoor-factory
+./install.sh
 
 HTTPScreenShot
 ●	HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites.
