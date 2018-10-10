@@ -47,34 +47,35 @@ git clone https://github.com/secretsquirrel/the-backdoor-factory /opt/the-backdo
 cd the-backdoor-factory
 ./install.sh
 
-HTTPScreenShot
-●	HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites.
-●	pip install selenium
-●	git clone https://github.com/breenmachine/httpscreenshot.git /opt/httpscreenshot
-●	cd /opt/httpscreenshot
-●	chmod +x install-dependencies.sh && ./install-dependencies.sh
-●	HTTPScreenShot only works if you are running on a 64-bit Kali by default. If you are running 32-bit PAE, install i686 phatomjs as follows:
-	○	wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2
-	○	bzip2 -d phantomjs-1.9.8-linux-i686.tar.bz2
-	○	tar xvf phantomjs-1.9.8-linux-i686.tar
-	○	cp phantomjs-1.9.8-linux-i686/bin/phantomjs /usr/bin/
+#HTTPScreenShot
+#HTTPScreenshot is a tool for grabbing screenshots and HTML of large numbers of websites.
+#pip install selenium
+#git clone https://github.com/breenmachine/httpscreenshot.git /opt/httpscreenshot
+#cd /opt/httpscreenshot
+#chmod +x install-dependencies.sh && ./install-dependencies.sh
+#HTTPScreenShot only works if you are running on a 64-bit Kali by default. If you are running 32-bit PAE, install i686 phatomjs as follows:
+#wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.8-linux-i686.tar.bz2
+#bzip2 -d phantomjs-1.9.8-linux-i686.tar.bz2
+#tar xvf phantomjs-1.9.8-linux-i686.tar
+#cp phantomjs-1.9.8-linux-i686/bin/phantomjs /usr/bin/
 
-SMBExec
-●	A rapid psexec style attack with samba tools.
-●	git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
-●	cd /opt/smbexec && ./install.sh
-●	Select 1 - Debian/Ubuntu and derivatives
-●	Select all defaults
-●	./install.sh
-●	Select 4 to compile smbexec binaries
-●	After compilation, select 5 to exit
-Masscan
-●	This is the fastest Internet port scanner. It can scan the entire Internet in under six minutes.
-●	apt-get install git gcc make libpcap-dev
-●	git clone https://github.com/robertdavidgraham/masscan.git /opt/masscan
-●	cd /opt/masscan
-●	make
-●	make install
+echo SMBExec
+echo A rapid psexec style attack with samba tools.
+git clone https://github.com/pentestgeek/smbexec.git /opt/smbexec
+cd /opt/smbexec && ./install.sh
+Select 1 - Debian/Ubuntu and derivatives
+Select all defaults
+./install.sh
+echo Select 4 to compile smbexec binaries
+echo After compilation, select 5 to exit
+
+echo Masscan
+echo This is the fastest Internet port scanner. It can scan the entire Internet in under six minutes.
+apt-get install git gcc make libpcap-dev
+git clone https://github.com/robertdavidgraham/masscan.git /opt/masscan
+cd /opt/masscan
+make
+make install
 
 Gitrob
 ●	Reconnaissance tool for GitHub organizations
