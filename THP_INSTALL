@@ -159,39 +159,39 @@ Echo noSQLMap
 Echo A automated pentesting toolset for MongoDB database servers and web applications.
 git clone https://github.com/tcstool/NoSQLMap.git /opt/NoSQLMap
 
-Spiderfoot
-●	Open Source Footprinting Tool
-●	mkdir /opt/spiderfoot/ && cd /opt/spiderfoot
-●	wget http://sourceforge.net/projects/spiderfoot/files/spiderfoot-2.3.0-src.tar.gz/download
-●	tar xzvf download
-●	pip install lxml
-●	pip install netaddr
-●	pip install M2Crypto
-●	pip install cherrypy
-●	pip install mako
+Echo Spiderfoot
+Echo Open Source Footprinting Tool
+mkdir /opt/spiderfoot/ && cd /opt/spiderfoot
+wget http://sourceforge.net/projects/spiderfoot/files/spiderfoot-2.3.0-src.tar.gz/download
+tar xzvf download
+pip install lxml
+pip install netaddr
+pip install M2Crypto
+pip install cherrypy
+pip install mako
 
 
-WCE
-●	Windows Credential Editor (WCE) is used to pull passwords from memory
-●	Download from: http://www.ampliasecurity.com/research/windows-credentials-editor/ and save to /opt/. For example:
-	○	wget www.ampliasecurity.com/research/wce_v1_4beta_universal.zip
-	○	mkdir /opt/wce && unzip wce_v1* -d /opt/wce && rm wce_v1*.zip
+Echo WCE
+Echo Windows Credential Editor (WCE) is used to pull passwords from memory
+Echo Download from: http://www.ampliasecurity.com/research/windows-credentials-editor/ and save to /opt/. For example:
+wget www.ampliasecurity.com/research/wce_v1_4beta_universal.zip
+mkdir /opt/wce && unzip wce_v1* -d /opt/wce && rm wce_v1*.zip
 
-Mimikatz
-●	Used for pulling cleartext passwords from memory, Golden Ticket, skeleton key and more
-●	Grab the newest release from https://github.com/gentilkiwi/mimikatz/releases/latest
-	○	cd /opt/ && wget http://blog.gentilkiwi.com/downloads/mimikatz_trunk.zip
-	○	unzip -d ./mimikatz mimikatz_trunk.zip
+Echo Mimikatz
+Echo Used for pulling cleartext passwords from memory, Golden Ticket, skeleton key and more
+Echo Grab the newest release from https://github.com/gentilkiwi/mimikatz/releases/latest
+cd /opt/ && wget http://blog.gentilkiwi.com/downloads/mimikatz_trunk.zip
+unzip -d ./mimikatz mimikatz_trunk.zip
 
-SET
-●	Social Engineering Toolkit (SET) will be used for the social engineering campaigns
-●	git clone https://github.com/trustedsec/social-engineer-toolkit/ /opt/set/
-●	cd /opt/set && ./setup.py install
+Echo SET
+Social Engineering Toolkit (SET) will be used for the social engineering campaigns
+git clone https://github.com/trustedsec/social-engineer-toolkit/ /opt/set/
+cd /opt/set && ./setup.py install
 
-PowerSploit (PowerShell)
-●	PowerShell scripts for post exploitation
-●	git clone https://github.com/mattifestation/PowerSploit.git /opt/PowerSploit
-●	cd /opt/PowerSploit && wget https://raw.githubusercontent.com/obscuresec/random/master/StartListener.py && wget https://raw.githubusercontent.com/darkoperator/powershell_scripts/master/ps_encoder.py
+Echo PowerSploit (PowerShell)
+Echo PowerShell scripts for post exploitation
+git clone https://github.com/mattifestation/PowerSploit.git /opt/PowerSploit
+cd /opt/PowerSploit && wget https://raw.githubusercontent.com/obscuresec/random/master/StartListener.py && wget https://raw.githubusercontent.com/darkoperator/powershell_scripts/master/ps_encoder.py
 
 Nishang (PowerShell)
 ●	Collection of PowerShell scripts for exploitation and post exploitation
