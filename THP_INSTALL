@@ -193,30 +193,30 @@ Echo PowerShell scripts for post exploitation
 git clone https://github.com/mattifestation/PowerSploit.git /opt/PowerSploit
 cd /opt/PowerSploit && wget https://raw.githubusercontent.com/obscuresec/random/master/StartListener.py && wget https://raw.githubusercontent.com/darkoperator/powershell_scripts/master/ps_encoder.py
 
-Nishang (PowerShell)
-●	Collection of PowerShell scripts for exploitation and post exploitation
-●	git clone https://github.com/samratashok/nishang /opt/nishang
+Echo Nishang (PowerShell)
+Echo Collection of PowerShell scripts for exploitation and post exploitation
+git clone https://github.com/samratashok/nishang /opt/nishang
 
-Veil-Framework
-●	A red team toolkit focused on evading detection. It currently contains Veil-Evasion for generating AV-evading payloads, Veil-Catapult for delivering them to targets, and Veil-PowerView for gaining situational awareness on Windows domains. Veil will be used to create a python based Meterpreter executable.
-●	git clone https://github.com/Veil-Framework/Veil /opt/Veil
-●	cd /opt/Veil/ && ./Install.sh -c
+Echo Veil-Framework
+Echo A red team toolkit focused on evading detection. It currently contains Veil-Evasion for generating AV-evading payloads, Veil-Catapult for delivering them to targets, and Veil-PowerView for gaining situational awareness on Windows domains. Veil will be used to create a python based Meterpreter executable.
+git clone https://github.com/Veil-Framework/Veil /opt/Veil
+cd /opt/Veil/ && ./Install.sh -c
 
-Burp Suite Pro
-●	Web Penetration Testing Tool
-●	Download: http://portswigger.net/burp/proxy.html. I would highly recommend that you buy the professional version. It is well worth the $299 price tag.
+#Burp Suite Pro
+#Web Penetration Testing Tool
+#Download: http://portswigger.net/burp/proxy.html. I would highly recommend that you buy the professional version. It is well worth the $299 price tag.
 
-ZAP Proxy Pro
-●	OWASP ZAP: An easy-to-use integrated penetration testing tool for discovering vulnerabilities in web applications.
-●	Download from: https://code.google.com/p/zaproxy/wiki/Downloads?tm=2
-●	*Included by default in Kali Linux (owasp-zap)
+#ZAP Proxy Pro
+#OWASP ZAP: An easy-to-use integrated penetration testing tool for discovering vulnerabilities in web applications.
+#Download from: https://code.google.com/p/zaproxy/wiki/Downloads?tm=2
+#Included by default in Kali Linux (owasp-zap)
 
-Fuzzing Lists (SecLists)
-●	These are scripts to use with Burp to fuzz parameters
-●	git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists
+#Fuzzing Lists (SecLists)
+#These are scripts to use with Burp to fuzz parameters
+#git clone https://github.com/danielmiessler/SecLists.git /opt/SecLists
 
-Password Lists
-●	For the different password lists, see the section: Special Teams - Cracking, Exploits, and Tricks
+Echo Password Lists
+Echo For the different password lists, see the section: Special Teams - Cracking, Exploits, and Tricks
 
 Echo Net-Creds Network Parsing 
 Echo Parse PCAP files for username/passwords
